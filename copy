@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -z "$1" ]
+    then
+        pwd | tr -d '\n' | xclip -selection clipboard
+else
+    cat $1 | xclip -selection clipboard
+fi
